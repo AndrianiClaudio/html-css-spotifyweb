@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float:right;
+}
+main.clearfix {
+    width:100vw;
+    height: 100vh;
+}
+main.clearfix > .float-l,
+main.clearfix > .float-r {
+    height: calc(100% - 50px);
+}
+main.clearfix > .float-l{
+    width:10%;
+    background-color: burlywood;
+}
+main.clearfix > .float-r{
+    width:90%;
+    background-color: blueviolet;
+}
