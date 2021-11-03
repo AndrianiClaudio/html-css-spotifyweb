@@ -15,16 +15,38 @@
     float:right;
 }
 
+/* MAIN */
 main.clearfix {
     height: calc(100vh - 50px);
 }
-main.clearfix > .float-l{
+/* NAVBAR */
+main.clearfix > .float-l {
     width:10%;
     height: 100%;
     background-color: burlywood;
 }
-main.clearfix > .float-r{
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.i-favicon::before {
+    content: url("../img/favicon.ico");
+}
+.i-home::before {
+    content: url("../img/home.svg");
+}
+.i-search {
+    content: url("../img/search.svg")
+}
+.i-library {
+    content: url("../img/libreria.svg")
+}
+/* /NAVBAR */
+/* MAIN-CONTAINER */
+main.clearfix > .float-r {
     width:90%;
     height: 100%;
     background-color: blueviolet;
 }
+/* /MAIN-CONTAINER */
+/* /MAIN */
