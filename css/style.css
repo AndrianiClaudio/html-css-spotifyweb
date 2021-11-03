@@ -15,6 +15,10 @@
     .float-r{
         float:right;
     }
+    main {
+        margin-bottom:80px;
+        padding-top: 90px;
+    }
     ul {
         list-style-type: none;
     }
@@ -26,78 +30,62 @@
         text-decoration: none;
     }
     /* MAIN */
-    main{
-        height: calc(100vh - 80px);
-    }
     .container.clearfix {
-        min-width: 500px;
-        width: 100vw;
+        width: 100%;
         height: calc(100vh - 80px);
     }
     /* NAVBAR */
     .container.clearfix > .float-l {
         width:10%;
-        min-width: 35px;
-        /* min-width: 60px; */
+        min-width: 40px;
         height: 100%;
         background-color: black;
     }
-    .flex-col {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 5px;
-    }
-
-    ul.flex-col {
+     .container.clearfix > .float-l > nav,
+      .container.clearfix > .float-l > nav > ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 5px;
+      }
+    
+    .r-gap-15px {
         row-gap: 15px;
     }
-
-    nav.flex-col a,
-    nav.flex-col a > i {
+    #logo-icon {
+        width:100%;
+        height: 100%;
+        /* cambio nero-bianco */
+        filter: invert(1);
+    }
+    nav.flex-col a{
         display: block;
-        width: 32px;
-        height: 32px;
-    }
-    .i-favicon {
-        content: url("../img/favicon.ico");
-        filter:invert(1);
-    }
-    .i-home {
-        content: url("../img/home.svg");
-    }
-    .i-search {
-        content: url("../img/search.svg");
-    }
-    .i-library {
-        content: url("../img/libreria.svg");
+        width: 35px;
+        height: 35px;
     }
     /* /NAVBAR */
     /* MAIN-CONTAINER */
     .container.clearfix > .float-r {
-        display: flex;
         width:90%;
         min-width: 315px;
-        position: relative;
         height: 100%;
         background-color: blueviolet;
-        /* min-width: 540px; */
     }
     /* HAEDER */
-    .container.clearfix > .float-r > header {
-        align-content: center;
-        min-width: 200px;
-        position: absolute;
+    #container-upgrade {
+        position:fixed;
         right: 0;
-        width: 100%;
+        width: 90%;
+        min-width: 300px;
         height: 90px;
+        filter: opacity(0.75);
         z-index: 12;
         background-color: #080B12;
         text-align: right;
         top:0;
     }
 
-    .container.clearfix > .float-r > header > a.btn {
+   #container-upgrade a.btn {
         text-transform: uppercase;
         display: inline-block;
         margin: 24.6px 2px 24.6px 0;
@@ -105,6 +93,7 @@
         font-size: 1em;
         border: 1px solid white;
         border-radius: 2em;
+        min-width: 220px;
     }
     /* /HAEDER */
     /* /MAIN-CONTAINER */
@@ -123,7 +112,6 @@
     /* /FOOTER */
     /* /MAIN */
 }
-
 @media screen and (min-width: 601px) {
     * {
         display: none;
