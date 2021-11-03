@@ -18,6 +18,14 @@
     ul {
         list-style-type: none;
     }
+    a,
+    a:active,
+    a:hover,
+    a:active {
+        color: white;
+        text-decoration: none;
+    }
+    /* MAIN */
     main{
         height: calc(100vh - 80px);
     }
@@ -26,14 +34,13 @@
         width: 100vw;
         height: calc(100vh - 80px);
     }
-    /* MAIN */
     /* NAVBAR */
     .container.clearfix > .float-l {
         width:10%;
         min-width: 35px;
         /* min-width: 60px; */
         height: 100%;
-        background-color: burlywood;
+        background-color: black;
     }
     .flex-col {
         display: flex;
@@ -41,30 +48,29 @@
         justify-content: center;
         margin-top: 5px;
     }
+
     ul.flex-col {
         row-gap: 15px;
     }
 
     nav.flex-col a,
-    nav.flex-col a i,
-    nav.flex-col i::before{
+    nav.flex-col a > i {
         display: block;
         width: 32px;
         height: 32px;
     }
-    .i-favicon::before {
+    .i-favicon {
         content: url("../img/favicon.ico");
-        color: white;
-
+        filter:invert(1);
     }
-    .i-home::before {
+    .i-home {
         content: url("../img/home.svg");
     }
     .i-search {
-        content: url("../img/search.svg")
+        content: url("../img/search.svg");
     }
     .i-library {
-        content: url("../img/libreria.svg")
+        content: url("../img/libreria.svg");
     }
     /* /NAVBAR */
     /* MAIN-CONTAINER */
@@ -77,7 +83,9 @@
         background-color: blueviolet;
         /* min-width: 540px; */
     }
+    /* HAEDER */
     .container.clearfix > .float-r > header {
+        align-content: center;
         min-width: 200px;
         position: absolute;
         right: 0;
@@ -85,7 +93,20 @@
         height: 90px;
         z-index: 12;
         background-color: #080B12;
+        text-align: right;
+        top:0;
     }
+
+    .container.clearfix > .float-r > header > a.btn {
+        text-transform: uppercase;
+        display: inline-block;
+        margin: 24.6px 2px 24.6px 0;
+        padding: 10px 20px;
+        font-size: 1em;
+        border: 1px solid white;
+        border-radius: 2em;
+    }
+    /* /HAEDER */
     /* /MAIN-CONTAINER */
     /* FOOTER */
     footer {
