@@ -14,10 +14,13 @@
 .float-r{
     float:right;
 }
+body{
+    min-width: 600px;
+}
 
 /* MAIN */
 main.clearfix {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
 }
 /* NAVBAR */
 main.clearfix > .float-l {
@@ -49,4 +52,13 @@ main.clearfix > .float-r {
     background-color: blueviolet;
 }
 /* /MAIN-CONTAINER */
+/* FOOTER */
+footer {
+    display: fixed;
+    width:100%;
+    min-width: 600px;
+    height: 80px;
+    background-color: darkorange;
+}
+/* /FOOTER */
 /* /MAIN */
