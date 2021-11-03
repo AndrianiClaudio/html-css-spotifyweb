@@ -14,19 +14,17 @@
 .float-r{
     float:right;
 }
+
 main.clearfix {
-    width:100vw;
-    height: 100vh;
-}
-main.clearfix > .float-l,
-main.clearfix > .float-r {
-    height: calc(100% - 50px);
+    height: calc(100vh - 50px);
 }
 main.clearfix > .float-l{
     width:10%;
+    height: 100%;
     background-color: burlywood;
 }
 main.clearfix > .float-r{
     width:90%;
+    height: 100%;
     background-color: blueviolet;
 }
