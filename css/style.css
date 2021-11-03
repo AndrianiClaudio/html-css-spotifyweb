@@ -14,9 +14,9 @@
 .float-r{
     float:right;
 }
-/* body{
+body{
     min-width: 600px;
-} */
+}
 
 /* MAIN */
 main.clearfix {
