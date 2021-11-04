@@ -67,7 +67,7 @@ ul {
 }
 #top-nav {
     width: 100%;
-    height: 140px;
+    height: 60%;
     overflow: hidden;
 }
 #top-nav li {
@@ -138,7 +138,9 @@ footer {
         /* cambio nero-bianco */
         filter: invert(1);
     }
-    #big-size-logo {
+    #big-size-logo,
+    h2,
+    #playlist {
         display: none;
     }
     #bottom-nav span {
@@ -175,5 +177,21 @@ footer {
     .right-content,
     #container-upgrade {
         width: calc(100% - var(--lbar-width));
+    }
+
+    h2 {
+        display: inline-block;
+    }
+    #playlist {
+        display: inline-block;
+        min-height: 15px;
+        height: 40%;
+        width: 100%;        overflow: auto;
+    }
+    #playlist li {
+        background-color: azure;
+
+        height: 12%;
+        width: 100%;
     }
 }
