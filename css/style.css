@@ -1,8 +1,24 @@
-@media screen and (max-width:600px){
+/* SCHERMI XS: 0-600px */
+/* @media screen and (max-width:600px){ */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    main {
+        margin-bottom:80px;
+        /* padding-top: 90px; */
+    }
+    ul {
+        list-style-type: none;
+    }
+    a,
+    a:active,
+    a:hover,
+    a:active {
+        color: white;
+        text-decoration: none;
     }
     .clearfix::after {
         content: '';
@@ -15,31 +31,22 @@
     .float-r{
         float:right;
     }
-    main {
-        margin-bottom:80px;
-        padding-top: 90px;
-    }
-    ul {
-        list-style-type: none;
-    }
-    a,
-    a:active,
-    a:hover,
-    a:active {
-        color: white;
-        text-decoration: none;
+     .r-gap-15px {
+        row-gap: 15px;
     }
     /* MAIN */
     .container.clearfix {
-        width: 100%;
+        width: 100vw;
         height: calc(100vh - 80px);
+        min-width: 320px;
+        overflow: auto;
     }
     /* NAVBAR */
     .container.clearfix > .float-l {
         width:10%;
-        min-width: 40px;
         height: 100%;
         background-color: black;
+        /* min-width: 40px; */
     }
      .container.clearfix > .float-l > nav,
       .container.clearfix > .float-l > nav > ul {
@@ -48,10 +55,6 @@
           justify-content: center;
           margin-top: 5px;
       }
-    
-    .r-gap-15px {
-        row-gap: 15px;
-    }
     #logo-icon {
         width:100%;
         height: 100%;
@@ -63,20 +66,19 @@
         width: 35px;
         height: 35px;
     }
-    /* /NAVBAR */
     /* MAIN-CONTAINER */
     .container.clearfix > .float-r {
         width:90%;
-        min-width: 315px;
         height: 100%;
-        background-color: blueviolet;
+        background-color: #141922;
+        padding-top: calc(90px + 2.3vh);
+        /* min-width: 280px; */
     }
     /* HAEDER */
     #container-upgrade {
         position:fixed;
         right: 0;
         width: 90%;
-        min-width: 300px;
         height: 90px;
         filter: opacity(0.75);
         z-index: 12;
@@ -84,7 +86,6 @@
         text-align: right;
         top:0;
     }
-
    #container-upgrade a.btn {
         text-transform: uppercase;
         display: inline-block;
@@ -95,14 +96,21 @@
         border-radius: 2em;
         min-width: 220px;
     }
-    /* /HAEDER */
-    /* /MAIN-CONTAINER */
+    /* MAIN-CONTAINER */
+    .ul-inlinef {
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
     /* FOOTER */
     footer {
         position: fixed;
         display: flex;
         justify-content: space-between;
-        width:100%;
+        width:100vw;
         height: 80px;
         bottom:0;
         left:0;
@@ -111,8 +119,15 @@
     }
     /* /FOOTER */
     /* /MAIN */
+/* } */
+/* SCHERMI S: 600-700px */
+@media screen and (min-width: 601px) and (max-width: 700px){
+    footer {
+        background-color: yellow;
+    }
 }
-@media screen and (min-width: 601px) {
+
+@media screen and (min-width: 701px) {
     * {
         display: none;
     }
