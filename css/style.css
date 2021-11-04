@@ -1,3 +1,9 @@
+:root {
+    --lightgrey-color: #141922 ;
+    --main-nav-color: #65676C;
+    --darkgrey-color: #080B12 ;
+}
+
 /* SCHERMI XS: 0-600px */
 /* @media screen and (max-width:600px){ */
     * {
@@ -6,6 +12,12 @@
         box-sizing: border-box;
     }
 
+    body {
+        /* font-family: 'Prompt', sans-serif; */
+        font-family: 'Secular One', sans-serif;
+        font-size: 100%;
+        color: white;
+    }
     main {
         margin-bottom:80px;
         /* padding-top: 90px; */
@@ -39,7 +51,6 @@
         width: 100vw;
         height: calc(100vh - 80px);
         min-width: 320px;
-        overflow: auto;
     }
     /* NAVBAR */
     .container.clearfix > .float-l {
@@ -70,8 +81,8 @@
     .container.clearfix > .float-r {
         width:90%;
         height: 100%;
-        background-color: #141922;
-        padding-top: calc(90px + 2.3vh);
+        background-color: var(--lightgrey-color);
+        padding: calc(90px + 2.3vh) 5vw ;
         /* min-width: 280px; */
     }
     /* HAEDER */
@@ -82,14 +93,14 @@
         height: 90px;
         filter: opacity(0.75);
         z-index: 12;
-        background-color: #080B12;
+        background-color: var(--darkgrey-color);
         text-align: right;
         top:0;
     }
    #container-upgrade a.btn {
         text-transform: uppercase;
         display: inline-block;
-        margin: 24.6px 2px 24.6px 0;
+        margin: 24.6px 2px 24.6px 20px;
         padding: 10px 20px;
         font-size: 1em;
         border: 1px solid white;
@@ -97,13 +108,27 @@
         min-width: 220px;
     }
     /* MAIN-CONTAINER */
-    .ul-inlinef {
+    .float-r > .container > header {
+        margin-bottom: 30px;
+    }
+    #main-nav .ul-inlinef {
         display: flex;
         flex-wrap: wrap;
         text-transform: uppercase;
         justify-content: center;
         column-gap: 20px;
         row-gap: 30px;
+    }
+    #main-nav .ul-inlinef li,
+    #main-nav .ul-inlinef a:hover,
+    #main-nav .ul-inlinef a:active,
+    #main-nav .ul-inlinef a:visited {
+        font-weight: bold;
+       color: var(--main-nav-color);
+    }
+    h1 {
+        font-size: 1.75em;
+        text-transform: capitalize;
     }
     /* FOOTER */
     footer {
