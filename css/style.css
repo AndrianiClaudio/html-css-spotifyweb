@@ -40,6 +40,7 @@ ul {
     list-style-type: none ;
 }
 .left-bar {
+    position: fixed;
     height: 100%;
     float: left;
     background-color: black;
