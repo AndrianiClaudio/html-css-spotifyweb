@@ -1,3 +1,19 @@
+    #main-nav .ul-inlinef {
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+    #main-nav .ul-inlinef li,
+    #main-nav .ul-inlinef a:hover,
+    #main-nav .ul-inlinef a:active,
+    #main-nav .ul-inlinef a:visited {
+        font-weight: bold;
+       color: var(--main-nav-color);
+    }
+
 :root {
     /* color */
     --lightgrey-color: #141922 ;
@@ -41,23 +57,17 @@ ul {
 }
 .left-bar {
     position: fixed;
-    height: 100%;
+    height: calc(100vh - var(--footer-height));
     float: left;
     background-color: black;
 }
 .right-content {
     float: right;
-    height: 100%;
+    height: calc(100vh - var(--footer-height));
     margin-top: var(--main-header-height);
-    background-color: chartreuse;
+    background-color: var(--darkgrey-color);
     overflow: auto;
 }
-
-.container.content {
-    height: 200px;
-    width: 500px;
-}
-
 #container-upgrade {
     display: flex;
     justify-content: flex-end;
@@ -70,6 +80,14 @@ ul {
     z-index: 12;
     background-color: var(--darkgrey-color);
 }
+#main-nav {
+    background-color: yellow;
+}
+h1 {
+        font-size: 1.75em;
+        text-transform: capitalize;
+    }
+
 /* FOOTER */
 footer {
     position: fixed;
@@ -115,10 +133,14 @@ footer {
 }
 /* SCHERMI S > 601px */
 @media screen and (min-width: 601px) {
+    /* LEFT-BAR */
     .left-bar {
         width: var(--lbar-width);
     }
-    /* LEFT-BAR */
+    .left-bar ul {
+        display: none;
+    }
+
     .right-content,
     #container-upgrade {
         width: calc(100% - var(--lbar-width));
