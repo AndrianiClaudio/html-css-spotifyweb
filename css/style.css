@@ -77,14 +77,29 @@ ul {
     height: 50px;
     width: 100%;
 }
-svg {
+.left-bar svg {
     height: 35px;
     width: 35px;
 }
+#bottom-nav .arrow-circle-down {
+    height: 20px;
+    width: 20px;
+}
+
 #bottom-nav {
-    background-color: whitesmoke;
-    height: 50px;
+    text-align: center;
+    height: 80px;
     width: 100%;
+}
+
+/* svg arrowdown*/
+.cls-1 { 
+    fill: #fff;
+    opacity: 0;
+}
+
+.cls-2 {
+    fill: white;
 }
 .right-content {
     float: right;
