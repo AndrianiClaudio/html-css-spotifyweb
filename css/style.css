@@ -195,6 +195,11 @@ h4 {
     color: var(--main-nav-color);
     font-weight: normal;
 }
+.main-container h3:hover,
+.main-container h4:hover,
+.img-container > img:hover {
+    cursor: pointer;
+}
 .main-container > div > img {
     width: 100%;
 }
