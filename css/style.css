@@ -14,10 +14,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* fix spazio verticale bianco mobile xxxsmall */
-body, html {
-    overflow: hidden;
-}
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
@@ -25,11 +21,24 @@ html {
 }
 main {
     width: 100%;
-    height: calc(100vh - var(--footer-height));
+    height: 100vh;
     min-width: 350px;
     overflow: hidden;
 }
-
+h1 {
+    margin-top: 30px;
+    margin-bottom: 23px;
+    font-size: 1.75em;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: 1em;
+} 
+/* fix spazio verticale bianco mobile xxxsmall */
+body, html {
+    overflow-y: hidden;
+}
+/* link */
 a,
 a:active,
 a:hover,
@@ -37,14 +46,15 @@ a:visited {
     text-decoration: none;
     color: inherit;
 }
-
+/* list */
 ul {
     list-style-type: none ;
 }
+/* left */
 .left-bar {
-    padding-bottom: 10px;
     display: flex;
     position: fixed;
+    padding-bottom: 10px;
     z-index: 999;
     height: calc(100vh - var(--footer-height));
     float: left;
@@ -53,7 +63,6 @@ ul {
     flex-direction: column;
     justify-content: space-between;
 }
-
 #top-nav {
     padding-top: 5px;
     width: 100%;
@@ -74,22 +83,15 @@ ul {
     width: 20px;
     margin-bottom: 15px;
 }
-
 #bottom-nav {
     text-align: center;
     height: 80px;
     width: 100%;
 }
-
-/* svg arrowdown*/
-/* .cls-1 { 
-    fill: #fff;
-    opacity: 0;
-} */
-
 .cls-2 {
     fill: var(--main-nav-color);
 }
+/* right */
 .right-content {
     float: right;
     height: calc(100vh - var(--footer-height));
@@ -99,6 +101,7 @@ ul {
     background-color: var(--main-color);
     overflow: auto;
 }
+/* fixed-bar: upgrade btn */
 #container-upgrade {
     display: flex;
     justify-content: flex-end;
@@ -122,6 +125,7 @@ ul {
     border-radius: 2em;
     margin-right: 15px;
 }
+/* main */
 #main-nav .ul-inlinef {
     display: flex;
     flex-wrap: wrap;
@@ -130,6 +134,7 @@ ul {
     padding-top:20px;
     column-gap: 20px;
     row-gap: 30px;
+    min-height: 4em;
 }
 #main-nav .ul-inlinef li,
 #main-nav .ul-inlinef a:hover,
@@ -139,30 +144,27 @@ ul {
     font-weight: bold;
     color: var(--main-nav-color);
 }
-h1 {
-    margin-top: 30px;
-    margin-bottom: 23px;
-    font-size: 1.75em;
-    text-transform: capitalize;
-}
-    
 /* MAIN-CONTAINER */
 .main-container {
     display: flex;
     min-height: 300px;
     flex-wrap: wrap;
-    column-gap: 10px;
     row-gap: 10px;
+    justify-content: space-around;
     padding-bottom: calc(var(--footer-height) + 25px);
 }
 .main-container > div {
-    height: 220px;
-    width: 220px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 220px;
+    /* min-height: 220px; */
+    /* width: 220px; */
     background-color: deeppink;
 }
 .main-container > div > img {
-    width: 100%;
-    height: 100%;
+    width: 220px;
+    height: 220px;
 }
 
 /* FOOTER */
@@ -223,18 +225,16 @@ footer {
         height: 50px;
         width: 30px;
     }
+    h2 {
+        display: inline-block;
+    }
     a.flex {
         flex-direction: row;
         flex-wrap: nowrap;
     }
-    
     .right-content,
     #container-upgrade {
         width: calc(100% - var(--lbar-width));
-    }
-
-    h2 {
-        display: inline-block;
     }
     #playlist {
         display: inline-block;
