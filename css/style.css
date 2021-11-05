@@ -280,6 +280,7 @@ footer {
         min-height: 30px;
     }
     #playlist li {
+        color: var(--main-nav-color);
         height: 1.4em;
         width: 100%;
         padding-top: 15px;
@@ -292,5 +293,9 @@ footer {
         flex-wrap: nowrap;
         /* justify-content: center;
         align-content: center; */
+    }
+    .border-btm {
+        border-bottom: 1px solid var(--main-nav-color);
+        width: 80%;
     }
 }
