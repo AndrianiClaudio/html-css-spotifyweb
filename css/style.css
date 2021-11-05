@@ -7,7 +7,7 @@
     --footer-height: 80px;
     --main-header-height: 90px;
     --small-lbar-width: 60px;
-    --lbar-width: 200px;
+    --lbar-width: 250px;
 }
 * {
     margin: 0;
@@ -43,6 +43,7 @@ a,
 a:active,
 a:hover,
 a:visited {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -83,9 +84,16 @@ ul {
     height: 30px;
     width: 30px;
 }
+
+#bottom-nav span {    
+    vertical-align: super;
+}
+.bold {
+    font-weight: bold;
+}
 #bottom-nav .arrow-circle-down {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
 }
 #bottom-nav span { font-size: 0.8em;}
 #bottom-nav li:first-child {
@@ -216,13 +224,16 @@ footer {
     .left-bar {
         text-align: left;
         width: var(--lbar-width);
-        padding-left: 10px;
+        padding-left: 20px;
     }
     svg.spotify-logo {
         display: none;
     }
     #bottom-nav,#top-nav {
         text-align: left;
+    }
+    #top-nav > header {
+        padding-top: 10px;
     }
     #big-size-logo {
         /* background-image: url("../img/logo.svg"); */
@@ -237,9 +248,8 @@ footer {
         /* line-height: 40px; */
         /* width: 80%; */
     }
-    #big-size-logo-img {height: 100%;}
-    i.fas.fa-plus {
-        height: 0.9em;
+    #big-size-logo > path {
+        transform: scale(0.85);
     }
     h2 {
         display: inline-block;
@@ -282,8 +292,5 @@ footer {
         flex-wrap: nowrap;
         /* justify-content: center;
         align-content: center; */
-    }
-    #bottom-nav .arrow-circle-down {
-        line-height: 1.4em;
     }
 }
