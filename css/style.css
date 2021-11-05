@@ -348,3 +348,12 @@ footer {
         /* max-width: 40%; */
     }
 }
+
+@media screen and (min-width: 1101px) {
+    /* MAIN-CONTAINER */
+    .img-container {
+        width: calc((100% / 6) - 15px);
+        /* max-width: 40%; */
+    }
+}
+
