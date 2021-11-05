@@ -213,6 +213,7 @@ footer {
     }
     #big-size-logo,
     h2,
+    .left-bar span,
     #playlist,
     #playlist-new {
         display: none;
