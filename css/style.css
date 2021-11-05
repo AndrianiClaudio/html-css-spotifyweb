@@ -54,6 +54,7 @@ ul {
 .left-bar {
     display: flex;
     position: fixed;
+    padding-top: 5px;
     padding-bottom: 10px;
     z-index: 999;
     height: calc(100vh - var(--footer-height));
@@ -64,16 +65,18 @@ ul {
     justify-content: space-between;
 }
 #top-nav {
-    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 13px;
     width: 100%;
-    height: 60%;
+    min-height: 150px;
     overflow: hidden;
     text-align: center;
 }
-#top-nav li {
-    height: 50px;
+#top-nav ul {
     width: 100%;
 }
+
 .left-bar svg {
     height: 35px;
     width: 35px;
@@ -81,6 +84,9 @@ ul {
 #bottom-nav .arrow-circle-down {
     height: 20px;
     width: 20px;
+}
+#bottom-nav span { font-size: 0.8em;}
+#bottom-nav li:first-child {
     margin-bottom: 15px;
 }
 #bottom-nav {
@@ -88,6 +94,7 @@ ul {
     height: 80px;
     width: 100%;
 }
+/* profile-fill */
 .cls-2 {
     fill: var(--main-nav-color);
 }
@@ -166,7 +173,6 @@ ul {
     width: 220px;
     height: 220px;
 }
-
 /* FOOTER */
 footer {
     position: fixed;
@@ -185,15 +191,8 @@ footer {
 @media screen and (max-width: 600px) {
     /* NAVBAR */
     .left-bar {
-        width:60px;
+        width:var(--small-lbar-width);
     }
-    /* #top-nav
-    #top-nav > ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 5px;
-    } */
     #big-size-logo,
     h2,
     #playlist {
@@ -202,12 +201,6 @@ footer {
     #bottom-nav span {
         display: none;
     }
-    /* .left-bar > nav a{
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-    } */
-
     .right-content,
     #container-upgrade {
         width: calc(100% - var(--small-lbar-width));
@@ -218,6 +211,11 @@ footer {
     /* LEFT-BAR */
     .left-bar {
         width: var(--lbar-width);
+        padding-left: 10px;
+    }
+    svg.spotify-logo {
+        height: 45px;
+        width: 45px;
     }
     #big-size-logo {
         display: inline-block;
@@ -227,6 +225,9 @@ footer {
     }
     h2 {
         display: inline-block;
+        font-size: 0.9em;
+        font-weight: bold;
+        text-align: left;
     }
     a.flex {
         flex-direction: row;
@@ -238,13 +239,22 @@ footer {
     }
     #playlist {
         display: inline-block;
-        min-height: 15px;
-        height: 40%;
-        width: 100%;        overflow: auto;
+        height: 200px;
+        width: 100%;        
+        overflow: auto;
+        font-size: 0.9em;
+        min-height: 30px;
     }
     #playlist li {
-        background-color: azure;
-        height: 12%;
+        background-color: darkslateblue;
+        height: 1.4em;
         width: 100%;
+    }
+    #bottom-nav li {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
     }
 }
