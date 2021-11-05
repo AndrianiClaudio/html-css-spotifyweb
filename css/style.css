@@ -73,6 +73,7 @@ ul {
     min-height: 150px;
     overflow: hidden;
     text-align: center;
+    height: 70%;
 }
 #top-nav ul {
     width: 100%;
@@ -93,7 +94,7 @@ ul {
 #bottom-nav {
     z-index: 100;
     text-align: center;
-    height: 80px;
+    max-height: 100px;
     width: 100%;
 }
 /* profile-fill */
@@ -254,18 +255,25 @@ footer {
     #container-upgrade {
         width: calc(100% - var(--lbar-width));
     }
+    #top-nav > header {
+        height: 170px;
+    }
+    h2 {
+        padding-bottom: 10px;
+    }
     #playlist {
         display: inline-block;
-        height: 150px;
+        height: calc(100% - 170px);
         width: 100%;        
         overflow: auto;
         font-size: 0.9em;
         min-height: 30px;
     }
     #playlist li {
-        background-color: darkslateblue;
         height: 1.4em;
         width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     #playlist-new
     #bottom-nav li {
