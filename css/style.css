@@ -9,6 +9,14 @@
     --small-lbar-width: 60px;
     --lbar-width: 250px;
 }
+.radius {
+    display: inline-block;
+    background-color: var(--main-nav-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.radius > svg {
+}
 * {
     margin: 0;
     padding: 0;
@@ -169,28 +177,7 @@ ul {
     font-weight: bold;
     color: var(--main-nav-color);
 }
-/* MAIN-CONTAINER */
-.main-container {
-    display: flex;
-    min-height: 300px;
-    flex-wrap: wrap;
-    row-gap: 10px;
-    justify-content: space-around;
-    padding-bottom: calc(var(--footer-height) + 25px);
-}
-.main-container > div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    max-width: 220px;
-    /* min-height: 220px; */
-    /* width: 220px; */
-    background-color: deeppink;
-}
-.main-container > div > img {
-    width: 220px;
-    height: 220px;
-}
+
 /* FOOTER */
 footer {
     position: fixed;
@@ -225,6 +212,24 @@ footer {
     #container-upgrade {
         width: calc(100% - var(--small-lbar-width));
     }
+
+    /* MAIN-CONTAINER */
+    .main-container {
+    
+    }
+    .main-container > div {
+
+    }
+    .img-container {
+    /* max-width: 40%; */
+    }
+    h3,h4 {
+        
+    }
+    .main-container > div > img {
+        
+    }
+
 }
 /* SCHERMI S > 601px */
 @media screen and (min-width: 601px) {
