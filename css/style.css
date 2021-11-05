@@ -34,6 +34,9 @@ h1 {
 h3 {
     font-size: 1em;
 } 
+.bold {
+    font-weight: bold;
+}
 /* fix spazio verticale bianco mobile xxxsmall */
 body, html {
     overflow-y: hidden;
@@ -85,12 +88,11 @@ ul {
     width: 30px;
 }
 
-#bottom-nav span {    
+#bottom-nav span,
+#top-nav > header span {    
     vertical-align: super;
 }
-.bold {
-    font-weight: bold;
-}
+
 #bottom-nav .arrow-circle-down {
     height: 25px;
     width: 25px;
@@ -104,6 +106,11 @@ ul {
     text-align: center;
     max-height: 100px;
     width: 100%;
+}
+
+#playlist li a,
+#top-nav > header a {
+    font-size: 0.88em;
 }
 /* profile-fill */
 .cls-2 {
@@ -229,6 +236,10 @@ footer {
     svg.spotify-logo {
         display: none;
     }
+    .left-bar span,
+    .left-bar li {
+        color: var(--main-nav-color);
+    }
     #bottom-nav,#top-nav {
         text-align: left;
     }
@@ -280,7 +291,6 @@ footer {
         min-height: 30px;
     }
     #playlist li {
-        color: var(--main-nav-color);
         height: 1.4em;
         width: 100%;
         padding-top: 15px;
@@ -297,5 +307,25 @@ footer {
     .border-btm {
         border-bottom: 1px solid var(--main-nav-color);
         width: 80%;
+    }
+    #bottom-nav span.bold {
+        font-weight: bold;
+        color: white;
+    }
+    #playlist-new{
+        display: flex;
+        align-items: center;
+    }
+    i.fas.fa-plus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        background-color: var(--main-nav-color);
+        fill: var(--main-nav-color);
+        margin-right: 0.8em;
+        color: black;
+        font-size: 1.2em;
     }
 }
