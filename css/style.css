@@ -15,8 +15,6 @@
     border-radius: 50%;
     overflow: hidden;
 }
-.radius > svg {
-}
 * {
     margin: 0;
     padding: 0;
@@ -44,6 +42,9 @@ h3 {
 } 
 .bold {
     font-weight: bold;
+}
+.main-container {
+    display: flex;
 }
 /* fix spazio verticale bianco mobile xxxsmall */
 body, html {
@@ -215,19 +216,20 @@ footer {
 
     /* MAIN-CONTAINER */
     .main-container {
-    
-    }
-    .main-container > div {
-
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        column-gap: 15px;
     }
     .img-container {
+        width: calc(50% - 7.5px);
+        text-align: center;
     /* max-width: 40%; */
     }
     h3,h4 {
         
     }
     .main-container > div > img {
-        
+        width: 100%;
     }
 
 }
