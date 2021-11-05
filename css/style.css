@@ -196,6 +196,7 @@ h4 {
     color: var(--main-nav-color);
     /* font-weight: normal; */
     font-size: 0.8em;
+    line-height: 3em;
 }
 .img-container > img:hover {
     cursor: pointer;
@@ -203,8 +204,6 @@ h4 {
 .main-container > div > img {
     width: 100%;
 }
-
-
 /* FOOTER */
 footer {
     position: fixed;
@@ -356,6 +355,9 @@ footer {
 
 @media screen and (min-width: 1101px) {
     /* MAIN-CONTAINER */
+    h1 {
+        margin-top: 15px;
+    }
     .img-container {
         width: calc((100% / 6) - 9px);
         /* max-width: 40%; */
