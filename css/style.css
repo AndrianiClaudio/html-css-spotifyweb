@@ -14,13 +14,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* fix spazio verticale bianco mobile xxxsmall */
+body, html {
+    overflow: hidden;
+}
 html {
     font-family: 'Montserrat', sans-serif;
     font-size: 100%;
     color: white;
 }
 main {
-   
     width: 100%;
     height: calc(100vh - var(--footer-height));
     min-width: 350px;
