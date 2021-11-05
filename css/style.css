@@ -55,7 +55,7 @@ ul {
     display: flex;
     position: fixed;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 17px;
     z-index: 999;
     height: calc(100vh - var(--footer-height));
     float: left;
@@ -69,6 +69,7 @@ ul {
     flex-direction: column;
     row-gap: 13px;
     width: 100%;
+    z-index: 10000;
     min-height: 150px;
     overflow: hidden;
     text-align: center;
@@ -81,7 +82,7 @@ ul {
     height: 35px;
     width: 35px;
 }
-#bottom-nav .arrow-circle-down {
+#bottom-nav .arrow-circle-down {=
     height: 20px;
     width: 20px;
 }
@@ -90,6 +91,7 @@ ul {
     margin-bottom: 15px;
 }
 #bottom-nav {
+    z-index: 100;
     text-align: center;
     height: 80px;
     width: 100%;
@@ -195,7 +197,8 @@ footer {
     }
     #big-size-logo,
     h2,
-    #playlist {
+    #playlist,
+    #playlist-new {
         display: none;
     }
     #bottom-nav span {
@@ -223,6 +226,9 @@ footer {
         height: 50px;
         width: 30px;
     }
+    i.fas.fa-plus {
+        height: 0.9em;
+    }
     h2 {
         display: inline-block;
         font-size: 0.9em;
@@ -239,7 +245,7 @@ footer {
     }
     #playlist {
         display: inline-block;
-        height: 200px;
+        height: 150px;
         width: 100%;        
         overflow: auto;
         font-size: 0.9em;
@@ -250,11 +256,15 @@ footer {
         height: 1.4em;
         width: 100%;
     }
+    #playlist-new
     #bottom-nav li {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         align-content: center;
+    }
+    #bottom-nav .arrow-circle-down {
+        line-height: 1.4em;
     }
 }
