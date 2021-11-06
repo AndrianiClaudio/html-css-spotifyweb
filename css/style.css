@@ -3,6 +3,7 @@
     --main-nav-color: #65676C;
     --main-header-color: #080B12 ;
     --main-color: #141922;
+    --footer-color: #282828;
     /* size */
     --footer-height: 80px;
     --main-header-height: 90px;
@@ -224,9 +225,27 @@ footer {
     height: var(--footer-height);
     bottom:0;
     left:0;
-    background-color: darkorange;
+    background-color: var(--footer-color);
     z-index: 2;
     overflow: hidden;
+}
+[class^="footer-"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 7.5px;
+}
+.footer-left > img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+.song-txt {
+    font-size: 0.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 10px;
 }
 
 /* SCHERMI XS MAX 600 */
@@ -322,7 +341,10 @@ footer {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-    #playlist-new
+    #playlist-new > span:hover {
+        cursor: pointer;
+    }
+    #playlist-new,
     #bottom-nav li {
         display: flex;
         flex-direction: row;
