@@ -224,12 +224,11 @@ h4 {
     text-align: center;
     margin-bottom: 20px;
     max-width: 400px;
-/* max-width: 40%; */
 }
 .img-container > img:hover {
     cursor: pointer;
 }
-/* FOOTER */
+/* footer */
 footer {
     position: fixed;
     display: flex;
@@ -254,6 +253,21 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     margin-right: 10px;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+}
+.player-bar-container {
+    background-color: darkgoldenrod;
+    width: 100px;
+    height: 20px;
+    display: flex;
+}
+.player-btn-container {
+    background-color: darkseagreen;
+    height: 20px;
+    width: 100px;
 }
 /* schermi X-Small <= 600px */
 @media screen and (max-width: 600px) {
