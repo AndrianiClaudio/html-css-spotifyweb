@@ -238,7 +238,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width:100%;
-    min-width: 550px;
+    min-width: 350px;
     height: var(--footer-height);
     bottom:0;
     left:0;
@@ -258,7 +258,7 @@ footer {
 .footer-left,
 .footer-right {
     max-width: calc(45% / 2);
-    width: calc(45% / 3.3);
+    min-width: 15%;
 }
 .song-txt {
     font-size: 0.75em;
