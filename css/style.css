@@ -11,6 +11,10 @@
     --lbar-width: 250px;
 }
 
+.main-container:last-of-type {
+    margin-bottom: var(--footer-height);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -250,6 +254,10 @@ footer {
 }
 .footer-center {
     width: 50%;
+}
+.footer-left,
+.footer-right {
+    max-width: calc(45% / 2);
 }
 .song-txt {
     font-size: 0.75em;
