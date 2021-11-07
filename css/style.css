@@ -234,6 +234,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width:100%;
+    min-width: 550px;
     height: var(--footer-height);
     bottom:0;
     left:0;
@@ -247,6 +248,9 @@ footer {
     align-items: center;
     column-gap: 7.5px;
 }
+.footer-center {
+    width: 50%;
+}
 .song-txt {
     font-size: 0.75em;
     display: flex;
@@ -257,17 +261,29 @@ footer {
 .player {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .player-bar-container {
     background-color: darkgoldenrod;
-    width: 100px;
     height: 20px;
     display: flex;
 }
+i.far.fa-play-circle {
+    transform: scale(1.5);
+}
 .player-btn-container {
+    display: flex;
+    column-gap: 1em;
+    justify-content: center;
+    align-items: flex-start;
     background-color: darkseagreen;
-    height: 20px;
-    width: 100px;
+    height: 30px;
+    /* width: 200px; */
+}
+.player-bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--main-nav-color) ;
 }
 /* schermi X-Small <= 600px */
 @media screen and (max-width: 600px) {
