@@ -258,6 +258,7 @@ footer {
 .footer-left,
 .footer-right {
     max-width: calc(45% / 2);
+    width: calc(45% / 3.3);
 }
 .song-txt {
     font-size: 0.75em;
@@ -290,17 +291,26 @@ i.far.fa-play-circle {
     height: 30px;
     /* width: 200px; */
 }
-.player-bar {
+/* secondo attuale canzone */
+[class^="level-set"] {
+    height: 100%;
+    background-color: lightgrey;
+}
+.level-set-25 {
+    width: 25%;
+}
+.level-set-20 {
+    width: 20%;
+}
+.footer-right {
+    margin-right: 15px;
+}
+.full-level-bar {
     height: 4px;
     width: calc(100% - 30px);
     background-color: var(--main-nav-color) ;
 }
-/* secondo attuale canzone */
-.song-play-time {
-    width: 23%;
-    height: 100%;
-    background-color: lightgrey;
-}
+
 /* schermi X-Small <= 600px */
 @media screen and (max-width: 600px) {
     /* hide */
