@@ -272,9 +272,11 @@ footer {
     width: 100%;
 }
 .player-bar-container {
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
     height: 20px;
+    column-gap: 15px;
     display: flex;
+    align-items: center;
 }
 i.far.fa-play-circle {
     transform: scale(1.5);
@@ -284,14 +286,20 @@ i.far.fa-play-circle {
     column-gap: 1em;
     justify-content: center;
     align-items: flex-start;
-    background-color: darkseagreen;
+    /* background-color: darkseagreen; */
     height: 30px;
     /* width: 200px; */
 }
 .player-bar {
     height: 4px;
-    width: 100%;
+    width: calc(100% - 30px);
     background-color: var(--main-nav-color) ;
+}
+/* secondo attuale canzone */
+.song-play-time {
+    width: 23%;
+    height: 100%;
+    background-color: lightgrey;
 }
 /* schermi X-Small <= 600px */
 @media screen and (max-width: 600px) {
