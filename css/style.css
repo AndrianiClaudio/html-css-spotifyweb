@@ -149,7 +149,7 @@ ul {
     width: 100%;
 }
 .img-container .img:hover {
-    filter: opacity(0.7);
+    filter: opacity(0.75);
     background-color: black;
 }
 .img-container .img .far.fa-play-circle {
@@ -215,8 +215,8 @@ h4:not(footer h4) {
     font-size: 0.9em;
     font-weight: bold;
     height: 100%;
+    color: var(--main-nav-color);
 }
-#main-nav .ul-inlinef li,
 #main-nav .ul-inlinef a:hover,
 #main-nav .ul-inlinef a:active,
 #main-nav .ul-inlinef a:visited {
