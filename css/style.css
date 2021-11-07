@@ -12,7 +12,7 @@
     --lbar-width: 250px;
 }
 
-.text-cursor {
+.text-cursor:hover {
     cursor: text;
 }
 .main-container:last-of-type {
@@ -49,6 +49,49 @@ a:visited {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+}
+/* :hover */
+.left-bar li a:hover,
+#main-nav .ul-inlinef li:hover a,
+#playlist-new .row:hover span,
+.footer-left i:hover{
+    color: white;
+}
+#bottom-nav .border-btm:hover .arrow-circle-down path {
+    fill: white;
+}
+#playlist-new .row:hover {
+    cursor: pointer;
+}
+#playlist-new .row:hover i {
+    background-color: white;
+}
+#container-upgrade > a:hover {
+    transform: scale(1.05);
+}
+.hover-underline:hover {
+    text-decoration: underline;
+}
+.main-container h4:hover {
+    text-decoration: underline;
+}
+
+footer i:hover,
+footer span:hover,
+.full-level-bar:hover,
+footer img,
+footer h3,
+footer h4 {
+    cursor: pointer;
+}
+footer h4:hover {
+    color: white;
+}
+.footer-center i:hover {
+    transform: scale(1.15);
+}
+i.far.fa-play-circle:hover {
+    transform: scale(1.65);
 }
 /* list */
 ul {
@@ -128,6 +171,13 @@ ul {
     width: 40px;
     margin-left: 10px;
 }
+footer h4 {
+    color: var(--main-nav-color);
+}
+footer.col {
+    display: flex;
+    flex-direction: column;
+}
 /* txt */
 .white {
     color: white;
@@ -155,7 +205,7 @@ h1 {
 h3 {
     font-size: 1em;
 }
-h4 {
+h4:not(footer h4) {
     color: var(--main-nav-color);
     /* font-weight: normal; */
     font-size: 0.8em;
@@ -164,6 +214,7 @@ h4 {
 #main-nav .ul-inlinef li {
     font-size: 0.9em;
     font-weight: bold;
+    height: 100%;
 }
 #main-nav .ul-inlinef li,
 #main-nav .ul-inlinef a:hover,
@@ -173,7 +224,10 @@ h4 {
 }
 .ul-inlinef > li{
     position: relative;
-    line-height: 2em;
+    /* line-height: 2em; */
+}
+.ul-inlinef li a {
+    padding-bottom: 5px;
 }
 .selected-brd-btm {
     position: absolute;
@@ -286,6 +340,9 @@ footer {
     z-index: 2;
     overflow: hidden;
 }
+.footer-left i {
+    color: var(--main-nav-color);
+}
 [class^="footer-"] {
     display: flex;
     justify-content: space-around;
@@ -324,6 +381,7 @@ footer {
 i.far.fa-play-circle {
     transform: scale(1.5);
 }
+
 .player-btn-container {
     display: flex;
     column-gap: 1em;
@@ -341,8 +399,8 @@ i.far.fa-play-circle {
     justify-content: flex-end;
     align-items: center;
 }
-[class^="level-set"]:hover {
-    background-color: greenyellow;
+.full-level-bar:hover [class^="level-set"] {
+    background-color: var(--green-hover-color);
     cursor: pointer;
 }
 .level-set-25 {
@@ -353,7 +411,7 @@ i.far.fa-play-circle {
 }
 .full-level-bar:hover .level-change {
     display: inline-block;
-    background-color: red;
+    background-color: var(--green-hover-color);
     height: 10px;
     width: 10px;
     border-radius: 50%;
